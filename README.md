@@ -40,12 +40,14 @@ This system provides continuous monitoring of critical parameters in biogas prod
 
 ```
 iot4agri/
-├── esp/           # ESP32 firmware
-├── backend/       # FastAPI server
-├── frontend/      # Next.js web application
-├── materials.md   # Materials List
-├── data.csv       # Database export
-└── LICENSE        # MIT License
+├── esp/                     # ESP32 firmware
+├── backend/                 # FastAPI server
+├── frontend/                # Next.js web application
+├── materials.md             # Materials List
+├── data.csv                 # Database export
+├── system-architecture.png  # System architecture overview
+├── pin-wiring.csv           # Pin wiring overview
+└── LICENSE                  # MIT License
 ```
 
 ## License
