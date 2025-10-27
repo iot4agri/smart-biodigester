@@ -64,3 +64,28 @@ Receives sensor data from ESP32 system.
   "methan_raw": ["0000005b", "00001234", "0000aaaa", "00000bb8", "12345678", "87654321", "0000005d"]
 }
 ```
+
+## Database Schema
+
+### Supabase Table: sensor_data
+```sql
+CREATE TABLE public.sensor_data (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  timestamp timestamp with time zone NOT NULL DEFAULT now(),
+  ph double precision NULL,
+  ph_voltage double precision NULL,
+  temp1 double precision NULL,
+  temp2 double precision NULL,
+  bme_temperature double precision NULL,
+  bme_humidity double precision NULL,
+  bme_pressure double precision NULL,
+  bme_gas_resistance double precision NULL,
+  methan_raw jsonb NULL,
+  methane_ppm integer NULL,
+  methane_percent double precision NULL,
+  methane_temperature double precision NULL,
+  methane_faults jsonb NULL,
+  upload_log text NULL,
+  CONSTRAINT sensor_data_pkey PRIMARY KEY (id)
+) TABLESPACE pg_default;
+```

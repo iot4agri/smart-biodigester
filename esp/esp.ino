@@ -1,9 +1,4 @@
 /**
- * @file esp.ino
- * @brief Smart Biodigester Multi-Sensor ESP32 Firmware
- * @version 1.0.0
- * @date 2025-08-31
- * @authors Tim Siebert, Max Zboralski
  * 
  * @description
  * Production-ready ESP32 firmware for the Smart Biodigester monitoring system.
@@ -50,8 +45,6 @@
  * - BME680 auto-calibration for gas sensor baseline
  * - Methane sensor 45-second warm-up period required
  * 
- * @license Private - Internal Use Only
- * @copyright 2025 Tim Siebert & Max Zboralski
  */
 
 // ========== Libraries ==========
