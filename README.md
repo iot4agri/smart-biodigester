@@ -44,6 +44,7 @@ iot4agri/
 ├── backend/       # FastAPI server
 ├── frontend/      # Next.js web application
 ├── materials.md   # Materials List
+├── data.csv       # Database export
 └── LICENSE        # MIT License
 ```
 
